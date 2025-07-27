@@ -1,6 +1,8 @@
 # Podcast Tool
 This is a Flask-based Docker container designed for making the archival and organization of MP3 files from a podcast significantly easier
 
+---
+
 ## Features
 - Upload MP3 files through a user-friendly web interface.
 - Download uploaded files with a single click.
@@ -8,9 +10,13 @@ This is a Flask-based Docker container designed for making the archival and orga
 - Persistent storage for uploaded files, even after container restarts.
 - Dark-themed UI for a modern and clean look.
 
+---
+
 ## Requirements
 - Docker
 - Python 3.9 (used in the container)
+
+---
 
 ## Setup and Usage
 
@@ -33,7 +39,10 @@ docker run -p 1123:1123 -v /path/to/config:/app/uploads podcastapp
 - Access the app at http://localhost:1123
 - Uploaded files will be stored in /uploads
 
+---
+
 ## File Structure
+```
 podcastapp-config/ 
 ├── flaskr/ 
 │ ├── init.py # Main Flask application 
@@ -41,7 +50,10 @@ podcastapp-config/
 │ │ └── index.html # HTML template for the web interface 
 ├── uploads/ # Directory for uploaded files (mapped to host) 
 ├── dockerfile # Dockerfile for building the container 
-├── README
+├── README.md
+```
+
+---
 
 ## Example Docker Compose Configuration
 Docker image:
@@ -55,6 +67,7 @@ Docker image:
     volumes:
       - /path/to/config:/app/uploads
 
+---
 ## Contributing
 ### Key Sections:
 1. **Features**: Highlights the app's functionality.
@@ -67,5 +80,9 @@ Docker image:
 
 Let me know if you'd like to tweak anything!
 
+---
+
 ## License
 This project is licensed under the MIT License. ``````
+
+---
