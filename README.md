@@ -84,6 +84,6 @@ Let me know if you'd like to tweak anything!
 ---
 
 ## License
-This project is licensed under the MIT License. ``````
+This project is licensed under the MIT License.
 
 ---
