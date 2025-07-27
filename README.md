@@ -66,6 +66,7 @@ Docker image:
     container_name: podcastapp
     volumes:
       - /path/to/config:/app/uploads
+    restart: unless-stopped
 
 ---
 ## Contributing
